@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Markmap Autoloader Example</title>
+            <!-- Estilo CSS para los contenedores de los mapas mentales -->
+            <style>
+                .markmap {
+                    position: relative;
+                }
+                .markmap > svg {
+                    width: 100%;
+                    height: 300px;
+                }
+            </style>
+        </head>
+        <body>
+            <!-- Contenedor para el primer mapa mental -->
+            <div class="markmap">
+                <script type="text/template">
+                    # La Pizza
+
+                    ## Ingredientes
+                    - Masa
+                      - Harina
+                      - Agua
+                      - Levadura
+                    - Salsa de tomate
+                    - Queso
+                    - Ingredientes adicionales
+                      - Pepperoni
+                      - Champiñones
+                      - Jamón
+                      - Pimientos
+                      - Cebolla
+                      - Aceitunas
+                    
+                    ## Tipos de Pizza
+                    - Margarita
+                    - Pepperoni
+                    - Hawaiana
+                    - Cuatro quesos
+                    - Vegetariana
+                    - BBQ
+                    
+                    ## Proceso de preparación
+                    1. Preparar la masa
+                    2. Extender la masa
+                    3. Agregar salsa de tomate
+                    4. Añadir queso y ingredientes
+                    5. Hornear
+                    
+                    ## Historia
+                    - Origen en la antigua Roma
+                    - Popularizada en Nápoles, Italia
+                    - Expansión global en el siglo XX
+                    
+                    ## Curiosidades
+                    - Consumida en todo el mundo
+                    - Variedades regionales
+                    - Inspiración para diferentes platos
+                    
+                    ## Beneficios y controversias
+                    - Alimento versátil y delicioso
+                    - Controversias sobre ingredientes y salud
+                    - Debate sobre autenticidad y tradición
+                </script>
+            </div>
+
+            <!-- Cargar el autoloader de Markmap -->
+            <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@latest"></script>
+            <script>
+                // Opcional: si quieres configurar opciones adicionales para el autoloader
+                window.markmap = {
+                    autoLoader: {
+                        // manual: true, // Si prefieres el modo manual
+                        // transformPlugins: [], // Para deshabilitar los complementos integrados
+                        // onReady: function() { // Callback cuando markmap-lib/markmap-view y sus dependencias están cargadas
+                        //     // Puedes ajustar opciones globales aquí
+                        // }
+                    }
+                };
+            </script>
+        </body>
+        </html>
